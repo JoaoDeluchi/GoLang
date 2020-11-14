@@ -18,7 +18,7 @@ func CreateProduct(c *gin.Context){
 
 func UpdateProduct(c *gin.Context){
 	c.JSON(200, gin.H{
-		"message": "Put ok"
+		"message": "Put ok",
 	})
 }
 
@@ -27,6 +27,7 @@ func DeleteProduct(c *gin.Context){
 		"message": "Delete OK !!!"
 	})
 }
+
 func main() {
 	r := gin.Default()
 	r.GET("/product", GetProduct)
